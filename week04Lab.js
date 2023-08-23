@@ -45,6 +45,8 @@ Question 1: Declaring Let and Const variables`)
  * ↓ YOUR CODE HERE ↓ */
 const drink = 'Soda'
 const food = 'Chicken'
+let myName = 'Yarik'
+let friendName = 'Jack'
 //Question: Name a reason why you would use const instead of let.
 //Answer: const doesnt allow you or anyone else to change the value of the variable later on if you need to have it set to something specific the whole time
 
@@ -58,8 +60,8 @@ Question 2: Template Literals`)
  *
  *
  * ↓ YOUR CODE HERE ↓ */
-console.log(`My friend and I are drinking ${drink} and we are eating ${food}`)
-console.log('My friend and I are drinking ' + drink + ' and we are eating ' + food)
+console.log(`${friendName} and ${myName} are drinking ${drink} and we are eating ${food}`)
+console.log(friendName + ' and '+ myName + ' are drinking ' + drink + ' and we are eating ' + food)
 //Question: How would the sentence you wrote look if you used string concatenation instead of template literals?
 //          console.log() your answer to check
 //Answer:It will look the same however the syntax using the template literals will be shorter than using normal string concatenation
@@ -94,7 +96,7 @@ Question 3: Arrow Functions`)
  *         console.log(lunchTime('Pizza','Water'))
  * ↓ YOUR CODE HERE ↓ */
 const lunchTime = (foodChoice, drinkChoice) => {
-   return `My friend and I are drinking ${drinkChoice} and we are eating ${foodChoice}`
+   return `${friendName} and ${myName} are drinking ${drinkChoice} and we are eating ${foodChoice}`
 }
 console.log(lunchTime('Pizza','Water'))
 //Question: What would your function look like if we were using the old way of creating a function?
