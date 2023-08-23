@@ -43,7 +43,7 @@ Question 1: Declaring Let and Const variables`)
  * Step 2: Initialize two more variables using 'let' and set one value to your name, and the other to your friends name.
  *
  * ↓ YOUR CODE HERE ↓ */
-const drink = 'Water'
+const drink = 'Soda'
 const food = 'Chicken'
 //Question: Name a reason why you would use const instead of let.
 //Answer: const doesnt allow you or anyone else to change the value of the variable later on if you need to have it set to something specific the whole time
@@ -72,9 +72,10 @@ Question 2a: Oh no`)
  * Step 2: Make a change to your code in Question 1 to fix the error. Run your code to make sure it's fixed.
  *
  * ↓ YOUR CODE HERE ↓ */
-
+//let drink = 'Soda'
+console.log(drink)
 //Question: Read the error message - in your own words - what does it mean?
-//Answer:
+//Answer: So it says there is a syntax error and that drink has already been declared since I used the const way to assign a variable I cannot change it unless I go back to where I stated it first and change it there
 
 /*---------------------------------- Arrow Functions -------------------------------------*/
 console.log(`-------------------------- 
@@ -92,9 +93,12 @@ Question 3: Arrow Functions`)
  * Step 3: Copy the code below, ↓ paste it underneath our new function, and run the code.
  *         console.log(lunchTime('Pizza','Water'))
  * ↓ YOUR CODE HERE ↓ */
-
+const lunchTime = (foodChoice, drinkChoice) => {
+   return `My friend and I are drinking ${drinkChoice} and we are eating ${foodChoice}`
+}
+console.log(lunchTime('Pizza','Water'))
 //Question: What would your function look like if we were using the old way of creating a function?
-//Answer:
+//Answer: function lunchTime(foodChoice, drinkChoice){return 'My friend and I are drinking ' + drinkChoice + ' and we are eating ' + foodChoice}
 
 /*---------------------------------- Callbacks -------------------------------------*/
 console.log(`-------------------------- 
